@@ -1,7 +1,7 @@
-package com.airportmanagement.service;
+package com.airport.service;
 
-import com.airportmanagement.model.Passenger;
-import com.airportmanagement.repository.PassengerRepository;
+import com.airport.model.Passenger;
+import com.airport.repository.PassengerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

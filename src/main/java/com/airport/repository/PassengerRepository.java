@@ -1,6 +1,6 @@
-package com.airportmanagement.repository;
+package com.airport.repository;
 
-import com.airportmanagement.model.Passenger;
+import com.airport.model.Passenger;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

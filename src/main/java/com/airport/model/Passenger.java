@@ -1,4 +1,4 @@
-package com.airportmanagement.model;
+package com.airport.model;
 
 import jakarta.persistence.*;
 import lombok.*;

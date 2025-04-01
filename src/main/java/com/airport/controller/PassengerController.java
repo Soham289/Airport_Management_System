@@ -1,7 +1,7 @@
-package com.airportmanagement.controller;
+package com.airport.controller;
 
-import com.airportmanagement.model.Passenger;
-import com.airportmanagement.service.PassengerService;
+import com.airport.model.Passenger;
+import com.airport.service.PassengerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

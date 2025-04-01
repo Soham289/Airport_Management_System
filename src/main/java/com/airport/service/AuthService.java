@@ -11,8 +11,9 @@ import java.util.Optional;
 
 @Service
 public class AuthService {
+
     private final UserRepository userRepository;
-    private final PasswordEncoder passwordEncoder; // ✅ Injecting PasswordEncoder
+    private final PasswordEncoder passwordEncoder;
 
     public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
@@ -23,12 +24,12 @@ public class AuthService {
     public void registerUser(RegisterRequest request) {
         User user = new User();
         user.setUsername(request.getUsername());
-        user.setPassword(passwordEncoder.encode(request.getPassword())); // 🔥 Encrypt password
+        user.setPassword(passwordEncoder.encode(request.getPassword())); // Encrypt password
         user.setRole(request.getRole());
         userRepository.save(user);
     }
 
-    // ✅ Login User
+    // ✅ Login User (Now without JWT)
     public String loginUser(LoginRequest request) {
         Optional<User> userOpt = userRepository.findByUsername(request.getUsername());
 
@@ -36,6 +37,6 @@ public class AuthService {
             throw new RuntimeException("Invalid username or password!");
         }
 
-        return "DummyToken123"; // 🚀 Will replace this with JWT later
+        return "Login successful!"; // 🔥 Instead of returning JWT, we return a success message
     }
 }
