@@ -1,0 +1,63 @@
+/* Flight Search Container */
+.flight-search-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .flight-search-container h2 {
+    color: #004aad;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+  }
+  
+  /* Input Fields */
+  .flight-search-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Button */
+  .flight-search-container button {
+    width: 100%;
+    padding: 10px;
+    background: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .flight-search-container button:hover {
+    background: #003080;
+  }
+  
+  .flight-search-container button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .flight-search-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .flight-search-container input {
+      width: 100%;
+    }
+  }
+  
